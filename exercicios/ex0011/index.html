@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositovos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="imagens flexivel">
+    </picture>
+    <h1>reproduzido Audio</h1>
+    <p>Vamos aprender a reprodizir áudios em html5.</p>
+    <!--<audio src="mida/Here it Comes - TrackTribe.mp3" controls ></audio>
+    <audio src="mida/368 - Dyalla.mp3" controls></audio>
+    MP3 WAV OGG-->
+    <audio preload="metadata" controls autoplay>
+        <source src="mida/Losing My Mind - NEFFEX.mp3" type="audio/mpeg">
+        <source src="mida/Soulicious - Dyalla.ogg" type="audio/ogg">
+        <source src="mida/Here it Comes - TrackTribe.wav" type="audio/wav">
+        <p>infeslimente seu navegador nao conseguir reproduzir o audio. <a href="mida/Here it Comes - TrackTribe.mp3">clique aki pra baixar o audio</a></p>
+    </audio>
+</body>
+</html>
